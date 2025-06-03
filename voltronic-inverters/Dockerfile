@@ -15,7 +15,7 @@ RUN apt-get update && apt-get install -y \
 WORKDIR /opt
 
 # Clone the repository with Sparse Checkout and check out the specific commit
-RUN git clone --filter=blob:none --no-checkout https://github.com/ned-kelly/docker-voltronic-homeassistant.git repo && \
+RUN git clone --filter=blob:none --no-checkout https://github.com/lukolszewski/docker-voltronic-homeassistant.git repo && \
     cd repo && \
     git fetch origin $GIT_COMMIT && \
     git checkout $GIT_COMMIT && \
