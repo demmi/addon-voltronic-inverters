@@ -23,7 +23,7 @@ case "${DEVICE}" in
         DEVICE_PATH="/dev/ttyS0"
         ;;
     usb-serial)
-        DEVICE_PATH="/dev/ttyUSB2"
+        DEVICE_PATH="/dev/ttyUSB0"
         ;;
     usb)
         DEVICE_PATH="/dev/hidraw0"
